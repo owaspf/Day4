@@ -52,7 +52,7 @@ openssl  rsa -in csr.pem -text -noout
 Le csr est signé par notre clé privée et c’est dejà fait
 Genérer un certificat à partir de cette demande de certificat csr.pem
 ```
-openssl  x509 –req –days 365 –in csr.pem –signkey pk.pem –out cert.pem
+openssl  x509 -req -days 365 -in csr.pem -signkey pk.pem -out cert.pem
 ```
 ```
 ls
