@@ -47,7 +47,7 @@ cat csr.pem
 ```
 Comme signature à amazone, évidemment il va pas signé n’importe comment ?
 ```
-openssl  rsa –in csr.pem –text –noout
+openssl  rsa -in csr.pem -text -noout
 ```
 Le csr est signé par notre clé privée et c’est dejà fait
 Genérer un certificat à partir de cette demande de certificat csr.pem
