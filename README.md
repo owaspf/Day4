@@ -118,7 +118,7 @@ nano 000-default.conf
 ```
 Mettre sslengine  On
 ```
-sslengine  On
+SslEngine  On
 ```
 
 Ajouter : 
@@ -131,7 +131,7 @@ systemctl reload apache2
 ```
 Erreur : 
 ```
-journalctl –xeu apache2.service
+journalctl -xeu apache2.service
 ```
 
 Activer le module SSL:
