@@ -80,7 +80,7 @@ Personalized data
 sudo nano /etc/hosts/
 ```
 change 127.0.0.1  localhost </br>
-by  127.0.0.1  localhost www.monsite.tn </br>
+by  127.0.0.1  localhost www.hacking.local </br>
 ```
 systemctl status apache2
 ```
