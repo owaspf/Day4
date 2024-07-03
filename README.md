@@ -1,5 +1,6 @@
 # Day4
 * Hafnium web apache manipulation openssl
+* Hafnium Serveur https auto-signé
 ```
 mkdir openssl
 ```
@@ -33,31 +34,33 @@ ls
 openssl rsa -pubin -in pub.pem -text -noout
 ```
 (modulus et exponents)
+```
 openssl req –new –key  pk.pem –out csr.pem
-
+```
 FQDN : nom de domaine eg:hacking.local
-
+```
 ls
-
+```
 Démander de signature de certificat
+```
 cat csr.pem
-
+```
 Comme signature à amazone, évidemment il va pas signé n’importe comment ?
+```
 openssl  rsa –in csr.pem –text –noout
-
+```
 Le csr est signé par notre clé privée et c’est dejà fait
 Genérer un certificat à partir de cette demande de certificat csr.pem
-
+```
 openssl  x509 –req –days 365 –in csr.pem –signkey pk.pem –out cert.pem
+```
+```
 ls
-
-
+```
+```
 openssl  x509 –in cert.pem –text –noout
-![image](https://github.com/owaspf/Day4/assets/174472657/eba46b62-3c39-4356-958b-310f0490d278)
+```
 
-
-
-* Hafnium Serveur https auto-signé
 ```
 apt update
 ```
