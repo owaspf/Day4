@@ -7,7 +7,7 @@ mkdir openssl
 cd openssl
 ```
 ```
-openssl genpkey –algorithm RSA –out pk.pem –pkeyopt rsa_keygen_bits:2048
+openssl genpkey -algorithm RSA -out pk.pem -pkeyopt rsa_keygen_bits:2048
 ```
 ```
 ls
@@ -17,20 +17,20 @@ cat pk.pem
 ```
 (le mieux c’est ajouter un chiffrement  et non en clair)
 ```
-openssl  rsa –in pk.pem –text
+openssl  rsa -in pk.pem -text
 ```
 ```
-openssl  rsa –in pk.pem –text –noout
+openssl  rsa -in pk.pem -text -noout
 ```
 Calculer la clé publique de la clé privée : 
 ```
-openssl  rsa –in pk.pem –pubout –out pub.pem
+openssl  rsa -in pk.pem -pubout -out pub.pem
 ```
 ```
 ls
 ```
 ```
-openssl rsa –pubin –in pub.pem –text –noout
+openssl rsa -pubin -in pub.pem -text -noout
 ```
 (modulus et exponents)
 
