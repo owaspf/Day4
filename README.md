@@ -108,9 +108,6 @@ cp pk.pem /etc/ssl/private
 cd /etc/apache2
 ```
 ```
-cd ..
-```
-```
 cd sites-available
 ```
 ```
