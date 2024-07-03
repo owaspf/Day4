@@ -123,7 +123,7 @@ SslEngine  On
 
 Ajouter : 
 ```
-SSLCertificateFile /etc/ssl/cert/dast.pem
+SSLCertificateFile /etc/ssl/certs/dast.pem
 SSLCertificateKeyFile /etc/ssl/private/pk.pem
 ```
 ```
@@ -137,6 +137,9 @@ journalctl -xeu apache2.service
 Activer le module SSL:
 ```
 a2enmod ssl
+```
+```
+a2ensite
 ```
 ```
 systemctl restart apache2
