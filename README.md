@@ -35,7 +35,7 @@ openssl rsa -pubin -in pub.pem -text -noout
 ```
 (modulus et exponents)
 ```
-openssl req –new –key  pk.pem –out csr.pem
+openssl req -new -key  pk.pem -out csr.pem
 ```
 FQDN : nom de domaine eg:hacking.local
 ```
@@ -58,7 +58,7 @@ openssl  x509 –req –days 365 –in csr.pem –signkey pk.pem –out cert.pem
 ls
 ```
 ```
-openssl  x509 –in cert.pem –text –noout
+openssl  x509 -in cert.pem -text -noout
 ```
 
 ```
